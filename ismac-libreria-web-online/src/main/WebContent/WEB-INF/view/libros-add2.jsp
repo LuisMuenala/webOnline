@@ -103,9 +103,10 @@
 								</c:forEach>	
 							</select>
 					</div>
+					<br>
 					
 						<button class="btn btn-primary" type="submit">Guardar</button>
-						<button class="btn btn-primary" type="button" onclick="window.location.href='/ismac-libreria-web-online/libros2/findAll'; return false;">Cancelar</button>
+						<button class="btn btn-danger" type="button" onclick="window.location.href='/ismac-libreria-web-online/libros2/findAll'; return false;">Cancelar</button>
 					
 				</form>
 			</div>

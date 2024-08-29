@@ -5,20 +5,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title>Sistema Libreria</title>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/estilos.css"/>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap-table.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<h1>Clientes</h1>
-	
-	
-	<form action="del" method="get">
-		<input type="hidden" id="idLibro" name="idLibro" value="${libro.idLibro}"/>
+	<section class="py-5 px-5">
+		<div class="container">
+			<h1>Delete Cliente</h1>
 		
-		<strong>¿Desea eliminar el dato?</strong>
 		
-		<button type="submit">Guardar</button>
-		
-	</form>
+			<form action="del" method="get">
+				<input type="hidden" id="idLibro" name="idLibro" value="${libro.idLibro}"/>
+				
+				<strong>¿Desea eliminar al cliente?</strong>
+				<br><br>
+				<button class="btn btn-danger" type="submit">Eliminar
+				<i class="fa-solid fa-user-minus"></i>
+				</button>
+				
+				<button class="btn btn-primary" type="button" onclick="window.location.href='/ismac-libreria-web-online/libros2/findAll'; return false;">Cancelar
+				<i class="fa-solid fa-xmark"></i></button>
+			
+			</form>
+		</div>	
+	</section>
 </body>
 </html>
